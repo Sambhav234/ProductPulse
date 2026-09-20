@@ -1,0 +1,5 @@
+{
+  "valid": {"price": "₹1,299", "stock": "In Stock"},
+  "placeholder": {"price": "N/A", "stock": "--"},
+  "anomaly": {"price": "9999", "stock": "Limited"}
+}

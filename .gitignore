@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Production builds
+dist/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and runtime output
+*.log
+logs/
+
+# Test and coverage output
+coverage/
+test-results/
+
+# Playwright artifacts
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Supabase local development state
+.temp/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE/editor files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo

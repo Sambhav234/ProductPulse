@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: price-tracker
+    env: node
+    buildCommand: npm ci && npx playwright install chromium && npm run build
+    startCommand: npm run api
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CRON_SECRET
+        sync: false
+      - key: TARGET_ORIGIN
+        value: https://demo.inelabteamdev.com
+      - key: STORE_BASE_URL
+        value: https://demo.inelabteamdev.com
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: FRONTEND_ORIGIN
+        sync: false
+      - key: SCRAPE_MAX_ATTEMPTS
+        value: "3"
+      - key: SCRAPE_TIMEOUT_MS
+        value: "30000"
